@@ -230,201 +230,212 @@ h4#scrollspyHeading3{
 
 
 /*========Sección de Móviles==========*/
-@media  screen and (max-width: 421px){
-  article{
-    background-color: rgba(128, 128, 128, 0.192);
+
+
+
+@media screen and (max-width:421px) {
+  /*===Menú de Navegación===*/
+  .none{
+    display: none;
   }
-  li.nav-item.dropdown{
-    margin: 0 auto;
-    margin-top: 10px;
+  .nav{
+    justify-content: center !important;
   }
-  
-  a.nav-link.dropdown-toggle:hover{
-    color: white;
-  }
+  /*Logo*/
   a.navbar-brand{
     display: none;
   }
-  
-  a.nav-link, a.nav-link:hover{
+
+  /*Enlaces del menu*/
+  .nav-item a, 
+  .nav-item a:hover{
     color: black;
   }
-  .transparente{
-    color: black !important;
-    background-color: transparent !important;
-  }
-  
-  
+
+  /*Icono de Fuego del enlace "Trend*/
   .icono1{
-    color: rgb(238, 36, 36);
     float: right;
-    margin-left: 5px;
+    margin-left: 4px;
     margin-top: -3px;
+    color: rgb(236, 8, 8);
   }
-  
-  .icono1:hover{
-    color: red;
+
+  /*Boton "Hamburguer"*/
+  button.btn,
+  button.btn:hover{
+    display: block;
+    float: right;
+    background-color: transparent;
+    border: none;
+    color: white;
   }
-  /*Cabecera*/
-  .image-cabecera{
+
+  /*====Cabecera====*/
+  /*Imagen de cabecera*/
+  .imagen-cabecera{
     display: none;
   }
-  
   .cabecera{
-    width: 100%;
     background-color: #754ffe;
   }
-  
+  /*Textos de la cabecera*/
   .textos-cabecera{
-    padding-top: 60px;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-    padding-bottom: 60px;
   }
-  .cabecera h4{
-    text-align: center;
+  .textos-cabecera h1{
     color: white;
-    font-size: 2rem;
-    margin-bottom: 15px;
-  
   }
-  
-  .cabecera h5{
-    color: white;
-    font-size: 1.2rem;  
-    text-align: center;
-    color: #baa7ff;
+  .textos-cabecera h5{
+    color: #baa7fe;
   }
-  
+
+  /*Botones de la cabecera*/
   .botones1{
-    margin-top: 40px;
-    margin-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
-  button.boton1{
+  .boton1{
+    padding: 10px;
     border: none;
-    background-color:#19cb99 ;
+    background-color: #19cb98;
     color: white;
-    padding: 10px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-  }
-  
-  button.boton2{
-    margin-left: 15px;
-    padding: 10px;
-    border: none;
-    background-color: white;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-  }
-  /*Línea de textos*/
-  .linea-textos{
-  
-  
+}
+.boton2{
+  padding: 10px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/*===Línea de Textos===*/
+.linea-textos{
   display: flex;
-  
-  }
-  
-  
-  .primera-columna, 
-  .segunda-columna, 
-  .tercera-columna{
-  padding-left: 15px;
-  
-  }
-  
-  .linea-textos h4{
-    font-size: .7rem;
-    padding-left: 23px;
-    padding-top: 15px;
-   
-  }
-  
-  .linea-textos h5{
-  display: none;
-  }
-  
-  .icono2{
-    float: left;
-    position: absolute;
-    margin-left: -28px;
-    margin-top: -5px;
-  }
-  
-  .card{
-    width: 70% !important;
-    margin-left: 70px;
-    height: 400px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-  }
-  
-  .card img{
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-    -webkit-border-radius: 10px 10px 0px 0px;
-    -moz-border-radius: 10px 10px 0px 0px;
-    -ms-border-radius: 10px 10px 0px 0px;
-    -o-border-radius: 10px 10px 0px 0px;
-  }
-  
+  margin-top: 10px;
+}
+
+.linea-textos h5{
+  display:none;
+}
+.linea-textos h4{
+  padding-top: 10px;
+  font-size: .8rem;
+}
+
+/*icono de la línea de textos*/
+.icono2{
+  float: left;
+  margin-top: -5px
+  ;
+}
+/*Primera columna de la línea de textos*/
+.primera-columna{
+  padding-right: 15px;
+}
+/*Segunda columna*/
+.segunda-columna{
+  margin-right: 15px;
+}
+
+/*====Contenido Principal de la Web (Sliders)===*/
+#scrollspyHeading1,
+#scrollspyHeading2,
+#scrollspyHeading3{
+  padding: 100px 50px 50px;
+}
+.card{
+  width: 70%;
+  height: 400px;
+  max-height: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+}
+/*Imagen de las Cards de los sliders*/
+.card img{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+/*Texto de los Cards de los Sliders*/
   .card h5{
-   text-align: center;
-   margin-top: 50px;
-   font-size: 1rem;
-   margin-bottom: 20px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
-  
+  /*Rating de los Cards de los Sliders*/
   .rating{
-    color: goldenrod;
     display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
+    justify-content: center!important;
+    color:goldenrod;
+    padding-bottom: 50px;
   }
-  
-  .boton3{
-    display: block;
-    margin: 0 auto;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    background-color: rgb(31, 48, 102);
-    color: white;
-    cursor: pointer;
-  }
-  
-  .boton3:hover{
-    opacity: .9;
-  }
-  
-  
-  h4#scrollspyHeading1{
-    padding-top:50px;
-    margin-bottom: 30px;
-    margin-left: 40px;
-  }
-  
-  h4#scrollspyHeading2,
-  h4#scrollspyHeading3{
-    margin-top: 200px;
-    margin-bottom: 30px;
-    margin-left: 40px;
-  }
-  .carousel-indicators button{
-    display: none;
-  }
+/*Boton de los Crads de los Sliders*/
+.boton3{
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  background-color: #8E44AD;
+  color:white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/*Indicadores del slider "Mas Popular"*/
+.carousel-indicators{
+  display:none;
+}
+/*Icono left del Carusel*/
+.flecha{
+  color:black;
+}
+/*Footer*/
+footer{
+  display: flex;
+  margin-top: 200px;
+}
+/*Texto del Footer*/
+footer h5{
+  font-size: .7rem;
+}
+footer h6{
+  float: left;
+  font-size: .7rem;
+  margin-top: 7px;
+  margin-left: 2px;
+}
+/*Avisos legales*/
+.legal{
+ margin-left: 60px;
+}
+.legal h5{
+ display: inline-block;
+ padding-right: 4px;
+ color: rgb(87, 87, 245);
+ cursor: pointer;
+ 
+}
+
+.legal h5:hover{
+  text-decoration: underline;
+}
 
 }
