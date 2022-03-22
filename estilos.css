@@ -1,17 +1,240 @@
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.movil{
+  display: none;
+}
+/*===Menú de Navegación===*/
+/*Logo del menú de Navegación*/
+a.navbar-brand{
+  color: black;
+  margin-left: 20px;
+}
+/*Enlaces del menú de Navegación*/
+.nav{
+  flex:1;
+  margin-left: 20px;
+}
+ul li a{
+  color: black!important;
+}
+a.nav-link.dropdown-toggle {
+  background-color: blue!important;
+  color: white !important;
+}
+
+/*Icono de fuego del menú de navegación*/
+.icono1{
+  float: right;
+  margin-top: -3px;
+  margin-left: 2px;
+  color:rgb(221, 3, 3);
+}
+.icono1:hover{
+  color:red;
+}
+
+/*====Cabecera===*/
+.cabecera{
+  background-color: #754ffe;
+  height: 456px;
+}
+/*imagen de Cabecera*/
+.imagen-cabecera{
+  float: right;
+}
+.imagen-cabecera img{
+  width: 500px;
+}
+
+/*Textos de Cabecera*/
+.textos-cabecera{
+  padding-top:80px;
+  padding-left: 100px;
+}
+.textos-cabecera h1{
+  color: white;
+  padding-bottom: 20px;
+}
+.textos-cabecera h5{
+  color: #baa7fe;
+  width: 50%;
+  padding-bottom: 40px;
+}
+.boton1{
+  padding: 10px;
+  background-color: #19cb98;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  
+}
+.boton2{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/*===Línea de Textos===*/
+.linea-textos{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.linea-textos h4{
+  font-size:1rem;
+  margin-top: 10px;
+}
+.linea-textos h5{
+  font-size: .8rem;
+}
+/*Columanas de las Líeneas de Texto*/
+.primera-columna{
+  padding-right: 105px;
+}
+.segunda-columna{
+  margin-right: 105px;
+}
+/*Iconos de las Líneas de Texto*/
+.icono2{
+  float: left;
+  margin-left: -45px;
+  padding: 5px;
+  background-color: rgba(255, 166, 0, 0.103);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/*===Contenido Principal (Sliders) de la Web*/
+#scrollspyHeading1{
+  padding:150px 350px 30px;
+}
+#scrollspyHeading2,
+#scrollspyHeading3{
+  padding: 300px 350px 30px;
+}
+/*Sliders*/
+.card{
+  width: 28%;
+  margin: 0 auto;
+  height: 500px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/*Imagen de los Sliders*/
+.card img{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+/*Texto de los Sliders*/
+.card h5{
+  padding-top: 60px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+/*Rating*/
+.rating{
+  margin: 0 auto;
+  color: goldenrod;
+  padding-bottom: 50px;
+}
+/*Boton de los Sliders*/
+.boton3{
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #8E44AD;
+  color: white;
+}
+/*Icono left del Carusel*/
+.flecha{
+  color:black;
+} 
+i.fa-solid.fa-arrow-left.flecha {
+  margin-left: 585px;
+}
+button.carousel-control-next {
+  margin-right: 297px;
+}
+/*====Footer====*/
+/*Footer*/
+footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+/*Texto del Footer*/
+footer h5{
+  font-size: .7rem;
+}
+footer h6{
+ 
+  font-size: .7rem;
+  margin-top: 7px;
+  margin-left: 2px;
+}
+/*Avisos legales*/
+.legal{
+ margin-left: 60px;
+}
+.legal h5{
+ display: inline-block;
+ padding-right: 4px;
+ color: rgb(87, 87, 245);
+ cursor: pointer;
+ 
+}
+
+.legal h5:hover{
+  text-decoration: underline;
+}
 
 
 
 
-
-
-
-/*========Sección de Móviles==========*/
-
-
-
-@media screen and (max-width:421px) {
+/*====================================
+=========ZONA ADAPTADA A MOVIL========*/
+@media screen and (max-width:900px){
   /*===Menú de Navegación===*/
+  .movil{
+    display: block;
+  }
   .none{
     display: none;
   }
@@ -24,6 +247,13 @@
   }
 
   /*Enlaces del menu*/
+  a.nav-link.dropdown-toggle:hover{
+    color: white;
+  }
+  a.nav-link.transparente.active {
+    background-color: transparent;
+    color: black;
+}
   .nav-item a, 
   .nav-item a:hover{
     color: black;
@@ -48,23 +278,29 @@
   }
 
   /*====Cabecera====*/
+  .cabecera{
+    background-color: #754ffe;
+  }
   /*Imagen de cabecera*/
   .imagen-cabecera{
     display: none;
   }
-  .cabecera{
-    background-color: #754ffe;
-  }
+  
   /*Textos de la cabecera*/
   .textos-cabecera{
     width: 80%;
     margin: 0 auto;
+    padding-top: 70px;
+    padding-left: 10px;
   }
   .textos-cabecera h1{
     color: white;
+    padding-bottom: 20px;
   }
   .textos-cabecera h5{
     color: #baa7fe;
+    padding-bottom: 15px;
+    width: 80%;
   }
 
   /*Botones de la cabecera*/
@@ -110,8 +346,10 @@
 /*icono de la línea de textos*/
 .icono2{
   float: left;
-  margin-top: -5px
-  ;
+  margin-top: -8px;
+  margin-left: -4px;
+  background-color: transparent;
+  margin-left: 0px;
 }
 /*Primera columna de la línea de textos*/
 .primera-columna{
@@ -130,8 +368,8 @@
 }
 .card{
   width: 70%;
-  height: 400px;
-  max-height: 400px;
+  height: 450px;
+  max-height: 450px;
   margin: 0 auto;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -162,7 +400,7 @@
     color:goldenrod;
     padding-bottom: 50px;
   }
-/*Boton de los Crads de los Sliders*/
+/*Boton de los Cardds de los Sliders*/
 .boton3{
   display: block;
   margin: 0 auto;
@@ -184,6 +422,13 @@
 .flecha{
   color:black;
 }
+i.fa-solid.fa-arrow-left.flecha {
+  margin-left: 0px;
+}
+button.carousel-control-next {
+  margin-right: 0px;
+}
+
 /*Footer*/
 footer{
   display: flex;
