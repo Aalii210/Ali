@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -17,34 +18,37 @@ body{
   display: none;
 }
 /*===Menú de Navegación===*/
-/*Logo del menú de Navegación*/
-a.navbar-brand{
-  color: black;
-  margin-left: 20px;
-}
-/*Enlaces del menú de Navegación*/
-.nav{
-  flex:1;
-  margin-left: 20px;
-}
-ul li a{
-  color: black!important;
-}
-a.nav-link.dropdown-toggle {
-  background-color: blue!important;
-  color: white !important;
+  /*Logo*/
+  nav a.navbar-brand {
+    margin-left: 20px !important;
 }
 
-/*Icono de fuego del menú de navegación*/
-.icono1{
-  float: right;
-  margin-top: -3px;
-  margin-left: 2px;
-  color:rgb(221, 3, 3);
+  /*Enlaces del menu*/
+  ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    margin-left: 59px;
+    margin-right: 49px!important;
 }
-.icono1:hover{
-  color:red;
+  li.nav-item {
+  padding-right: 23px;
+  }
+  /*Botón de Búsqueda*/
+  button.btn{
+    background-color: blue;
+    color: white;
+    border: none;
+    transition:.6s all ease;
+    -webkit-transition:.6s all ease;
+    -moz-transition:.6s all ease;
+    -ms-transition:.6s all ease;
+    -o-transition:.6s all ease;
 }
+
+  button.btn:hover{
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+  }
+
 
 /*====Cabecera===*/
 .cabecera{
@@ -141,6 +145,7 @@ a.nav-link.dropdown-toggle {
 .card{
   width: 28%;
   max-width: 400px;
+  min-width: 400px;
   margin: 0 auto;
   height: 500px;
   min-height: 520px;
@@ -190,10 +195,10 @@ a.nav-link.dropdown-toggle {
   color:black;
 } 
 i.fa-solid.fa-arrow-left.flecha {
-  margin-left: 585px;
+  margin-left: 305px;
 }
 button.carousel-control-next {
-  margin-right: 297px;
+  margin-right: 157px;
 }
 /*====Footer====*/
 /*Footer*/
@@ -235,50 +240,7 @@ footer h6{
 =========ZONA ADAPTADA A MOVIL========*/
 @media screen and (max-width:900px){
   /*===Menú de Navegación===*/
-  .movil{
-    display: block;
-  }
-  .none{
-    display: none;
-  }
-  .nav{
-    justify-content: center !important;
-  }
-  /*Logo*/
-  a.navbar-brand{
-    display: none;
-  }
-
-  /*Enlaces del menu*/
-  a.nav-link.dropdown-toggle:hover{
-    color: white;
-  }
-  a.nav-link.transparente.active {
-    background-color: transparent;
-    color: black;
-}
-  .nav-item a, 
-  .nav-item a:hover{
-    color: black;
-  }
-
-  /*Icono de Fuego del enlace "Trend*/
-  .icono1{
-    float: right;
-    margin-left: 4px;
-    margin-top: -3px;
-    color: rgb(236, 8, 8);
-  }
-
-  /*Boton "Hamburguer"*/
-  button.btn,
-  button.btn:hover{
-    display: block;
-    float: right;
-    background-color: transparent;
-    border: none;
-    color: white;
-  }
+ 
 
   /*====Cabecera====*/
   .cabecera{
@@ -371,8 +333,8 @@ footer h6{
 }
 .card{
   width: 70%;
-  height: 450px;
-  max-height: 450px;
+  min-width: 300px;
+  max-width: 300px;
   margin: 0 auto;
   border-radius: 10px;
   -webkit-border-radius: 10px;
