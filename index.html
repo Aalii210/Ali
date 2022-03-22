@@ -71,30 +71,45 @@
 
 
 <!----------------------------------------------------------->
-      <div class="none">
-        <nav id="navbar-example2" class="navbar px-3">
-          <a class="navbar-brand" href="#">[LOGO]</a>
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link" href="#scrollspyHeading1">Recomendado</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#scrollspyHeading2">Popular</a>
-            </li>
-            <li class="nav-item">
-              <a href="#scrollspyHeading3" class="nav-link transparente">Trend <span class="material-icons icono1">&#xef55;</span></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Todos los Cursos</a>
-              <ul class="dropdown-menu">
-                <li><a href="#" class="dropdown-item">Programacion Web</a></li>
-                <li><a href="#" class="dropdown-item">Hacking</a></li>
-                <li><a href="#" class="dropdown-item">Diseño gráfico</a></li>
-              </ul>
-            </li>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">[LOGO]</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#scrollspyHeading1">Recomendado</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#scrollspyHeading2">Popular</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#scrollspyHeading3">Tendencia</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            ....
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Curso de Front End</a></li>
+            <li><a class="dropdown-item" href="#">Curso de Hacking</a></li>
+            <li><a class="dropdown-item" href="#">Cueso de Diseño Gráfico</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Todos los Cursos Disponibles</a></li>
           </ul>
-        </nav>
-      </div>
+        </li>
+        
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
           <!--==============================================================================================================================================================Cabecera===================================================-->      
           <div class="cabecera">
@@ -923,8 +938,7 @@
 
 <div class="pie-pagina">
   <footer>
-    <hr>
-    <h6>© 2022 | Ali</h6>
+    <h6 class="propiedad">© 2022 | Ali</h6>
     <div class="legal">
       <h5>Política de Cookies</h5>
       <h5>Política de Privacidad</h5>
