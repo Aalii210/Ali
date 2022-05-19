@@ -55,7 +55,7 @@ body{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background-image: url("img/person_white_24dp.svg");
+    background-image: url("person_white_24dp.svg");
     background-repeat: repeat;
     background-position: center;
     margin-top: -2px;
@@ -156,7 +156,7 @@ body{
 .imagen-perfil1{
     width: 30px;
     height: 30px;
-    background-image: url("img/leomessi.jpg");
+    background-image: url("leomessi.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 33px;
@@ -183,7 +183,7 @@ body{
 }
 .imagen-post1{
     width: 100%;
-    background-image: url(img/messi.jpg);
+    background-image: url("messi.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -215,7 +215,7 @@ cursor: pointer;
 .bio-imagen-post1{
     height: 20px;
     width: 20px;
-    background-image: url("img/ayub.jpg");
+    background-image: url("ayub.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -267,7 +267,7 @@ cursor: pointer;
 .imagen-perfil2{
     width: 30px;
     height: 30px;
-    background-image: url("img/yaseendari-perfil.jpg");
+    background-image: url("yaseendari-perfil.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 33px;
@@ -280,7 +280,7 @@ cursor: pointer;
 }
 .imagen-post2{
     width: 100%;
-    background-image: url("img/yaseendari.jpg");
+    background-image: url("yaseendari.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -295,7 +295,7 @@ cursor: pointer;
 .imagen-perfil3{
     width: 30px;
     height: 30px;
-    background-image: url("img/nebil.jpg");
+    background-image: url("nebil.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 33px;
@@ -308,7 +308,7 @@ cursor: pointer;
 }
 .imagen-post3{
     width: 100%;
-    background-image: url("img/nebil-post.jpg");
+    background-image: url("nebil-post.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -364,7 +364,7 @@ p{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-image: url("img/kemel.jpg");
+    background-image: url("kemel.jpg");
     background-position: center;
     background-size: 100%;
     margin: 0 auto;
@@ -378,7 +378,7 @@ p{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-image: url("img/iosu.jpg");
+    background-image: url("iosu.jpg");
     background-position: center;
     background-size: 100%;
     margin: 0 auto;
@@ -393,7 +393,7 @@ p{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-image: url("img/morad.jpg");
+    background-image: url("morad.jpg");
     background-position: center;
     background-size: 100%;
     margin: 0 auto;
@@ -407,7 +407,7 @@ p{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-image: url("img/yessin.jpg");
+    background-image: url("yessin.jpg");
     background-position: center;
     background-size: 100%;
     margin: 0 auto;
@@ -421,7 +421,7 @@ p{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-image: url("img/person_white_24dp.svg");
+    background-image: url("person_white_24dp.svg");
     background-color: lightgray;
     background-position: center;
     background-size: 100%;
@@ -437,7 +437,7 @@ p{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-image: url("img/leomessi.jpg");
+    background-image: url("leomessi.jpg");
     background-position: center;
     background-size: 100%;
     margin: 0 auto;
@@ -477,7 +477,7 @@ p{
 .imagen-perfil4{
     width: 30px;
     height: 30px;
-    background-image: url("img/minion-perfil.jpg");
+    background-image: url("minion-perfil.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 33px;
@@ -490,7 +490,7 @@ p{
 }
 .imagen-post4{
     width: 100%;
-    background-image: url("img/minion.jpg");
+    background-image: url("minion.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -501,7 +501,7 @@ p{
 .imagen-perfil5{
     width: 30px;
     height: 30px;
-    background-image: url("img/foot.jpg");
+    background-image: url("foot.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 33px;
@@ -699,7 +699,7 @@ svg.quitar{
     height: 130px;
 
     margin-bottom: 1px;
-    background-image: url("img/imagen14.jpg");
+    background-image: url("imagen14.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -717,7 +717,7 @@ svg.quitar{
     width: 120px;
     height: 130px;
     margin-bottom: 1px;
-    background-image: url("img/imagen4.jpg");
+    background-image: url("imagen4.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -728,7 +728,7 @@ svg.quitar{
     width: 119px;
     height: 130px;
     margin-bottom: 1px;
-    background-image: url("img/imagen7.jpg");
+    background-image: url("imagen7.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -736,7 +736,7 @@ svg.quitar{
 .imagen8{
     width: 120px;
     height: 130px;
-    background-image: url("img/imagen3.jpg");
+    background-image: url("imagen3.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -744,7 +744,7 @@ svg.quitar{
 .imagen9{
     width: 120px;
     height: 130px;
-    background-image: url("img/imagen9.jpg");
+    background-image: url("imagen9.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -754,7 +754,7 @@ svg.quitar{
     width: 120px;
     height: 130px;
     margin-bottom: 1px;
-    background-image: url("img/imagen10.jpg");
+    background-image: url("imagen10.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -763,7 +763,7 @@ svg.quitar{
     width: 120px;
     height: 130px;
 
-    background-image: url("img/imagen11.jpg");
+    background-image: url("imagen11.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -773,7 +773,7 @@ svg.quitar{
     width: 120px;
     height: 130px;
     margin-top: -130px;
-    background-image: url("img/imagen12.jpg");
+    background-image: url("imagen12.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -783,7 +783,7 @@ svg.quitar{
 .imagen13{
     width: 120px;
     height: 130px;
-    background-image: url("img/imagen1.jpg");
+    background-image: url("imagen1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -793,7 +793,7 @@ svg.quitar{
     width: 120px;
     height: 130px;
     margin-bottom: 1px;
-    background-image: url("img/imagen14.jpg");
+    background-image: url("imagen14.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -801,7 +801,7 @@ svg.quitar{
 .imagen15{
     width: 120px;
     height: 130px;
-    background-image: url("img/imagen15.jpg");
+    background-image: url("imagen15.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -810,7 +810,7 @@ svg.quitar{
 .imagen16{
     width: 120px;
     height: 130px;
-    background-image: url("img/imagen9.jpg");
+    background-image: url("imagen9.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
