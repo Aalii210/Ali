@@ -1,128 +1,99 @@
-var boton_si = document.getElementById("boton_si");
-var boton_no = document.getElementById("boton_no");
-var boton_no1 = document.getElementById("boton_no1");
-var boton_no2 = document.getElementById("boton_no2");
-var boton_no3 = document.getElementById("boton_no3");
-var boton_no4 = document.getElementById("boton_no4");
-var saber = document.getElementById("contenedor");
-var primera_parte = document.getElementById("primera_parte");
-var quitar = document.getElementById("quitar");
-var audio = document.getElementById("audio");
-var enviar = document.getElementById("enviar");
-var formulario = document.getElementById("formulario");
-var contenedor = document.getElementById("contenedor");
-var quitar2 = document.getElementById("quitar2");
-var oculto = document.getElementById("oculto");
-var mostrar = document.getElementById("invalidCheck");
+var mas = document.querySelector(".more");
+var texto_mas = document.querySelector(".none");
+var traducir = document.querySelector(".traducir");
+var traduccion = document.querySelector(".traduccion");
+var texto_inicial = document.querySelector(".texto-inicial");
 
-
-///////////////////////////////////
-//SI PASAMOS EL RATON SOBRE LOS BOTONOS "NO"
-boton_no.onmouseover = () =>{
-  boton_no.style.display = "none";
-  boton_no1.style.display = "inline-block"
+mas.onclick = () =>{
+    texto_inicial.style.display = "none";
+    texto_mas.style.display = "block";
+    mas.style.display = "none"
+}
+traducir.onclick = () =>{
+    texto_inicial.style.display = "none";
+    texto_mas.style.display = "none";
+    traduccion.style.display = "block";
 }
 
-boton_no1.onmouseover = () =>{
-  boton_no1.style.display = "none";
-  boton_no4.style.display = "inline-block"
-}
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
-boton_no4.onmouseover = () =>{
-  boton_no4.style.display = "none";
-  boton_no3.style.display = "inline-block"
-}
+  ////////////////////////////////////////
+  var inicio = document.querySelector(".boton-inicio")
+  var boton_busqueda = document.querySelector(".boton-busqueda")
+  var buscar = document.querySelector(".input-group-text");
+  var input = document.querySelector(".form-control");
+  var imagenes = document.querySelector(".imagenes");
+  var svg = document.querySelector(".svg");
+  var tamaño = document.querySelector(".buscar");
+  var busqueda = document.querySelector(".busquedas-recientes");
+  var flecha = document.querySelector(".flecha-atras");
+  var perfil1 = document.querySelector(".perfil1")
+  var svg1 = document.querySelector(".svg1");
+  var perfil2 = document.querySelector(".perfil2")
+  var svg2 = document.querySelector(".svg2");
+  var perfil3 = document.querySelector(".perfil3")
+  var svg3 = document.querySelector(".svg3");
+  var perfil4 = document.querySelector(".perfil4")
+  var svg4 = document.querySelector(".svg4");
+  var perfil5 = document.querySelector(".perfil5")
+  var svg5 = document.querySelector(".svg5");
+  
 
-boton_no3.onmouseover = () =>{
-  boton_no3.style.display = "none";
-  boton_no2.style.display = "inline-block"
-}
-
-boton_no2.onmouseover = () =>{
-  boton_no2.style.display = "none";
-  boton_no.style.display = "inline-block"
-}
-
-
-///////////////////////////////////
-boton_si.onclick = ()=>{
-  saber.style.display = "block";
-  primera_parte.style.display = "none";
-  audio.play()
-}
-
-quitar.onclick = () =>{
-  saber.style.display = "none";
-  primera_parte.style.display = "block";
-}
-
-mostrar.onclick = () =>{
-  enviar.style.display = "block";
-
-}
-
-let timeout;
-enviar.onclick = () =>{
-formulario.style.display = "none";
-quitar.style.display = "none";
-document.getElementById("quitar2").display = "block";
-
- timeout = setTimeout(alertFunc, 000);
-  timeout = setTimeout(ocultarfunc, 10000);
-  timeout = setTimeout(MostrarP, 000);
-  timeout = setTimeout(OcultarP, 3000);
-  timeout = setTimeout(MostrarP2, 3000);
-  timeout = setTimeout(OcultarP2, 6000);
-  timeout = setTimeout(MostrarP3, 6000);
-  timeout = setTimeout(OcultarP3, 10000);
-  timeout = setTimeout(Imagen, 10000);
-}
-
-quitar2.onclick = () => {
-contenedor.style.display = "none";
-oculto.style.display = "flex";
-}
-
-function alertFunc() {
-  document.getElementById("reload").style.display = "block";
+  inicio.onclick = () =>{
+    tamaño.style.display = "none";
+    document.querySelector(".sub-contenedor").style.display = "block"
   }
-  
-function ocultarfunc(){
-  document.getElementById("carga").style.display = "none";
-  document.getElementById("quitar2").style.display = "block";
-  document.getElementById("imagen").style.display = "block";
-}
+  boton_busqueda.onclick = () =>{
+    tamaño.style.display = "block";
+    document.querySelector(".sub-contenedor").style.display = "none"
+  }
+  input.onclick = () =>{
+    imagenes.style.display = "none";
+    svg.style.display = "none";
+    busqueda.style.display = "block";
+    tamaño.style.height = "100vh";
+    flecha.style.display = "block";
+    document.querySelector(".buscador").style.padding = "20px 20px 20px 50px";
+  }
 
+  flecha.onclick = () =>{
+    imagenes.style.display = "flex";
+    svg.style.display = "block";
+    tamaño.style.height = "125vh";
+    flecha.style.display = "none";
+    document.querySelector(".buscador").style.padding = "20px";
+    busqueda.style.display = "none";
+  }
 
-function MostrarP(){
-  document.getElementById("p1").style.display = "block";
-}
+  svg1.onclick = () =>{
+    perfil1.style.display = "none"
+  }
+  svg2.onclick = () =>{
+    perfil2.style.display = "none"
+  }
 
-function OcultarP(){
-   document.getElementById("p1").style.display = "none";
-}
+  svg3.onclick = () =>{
+    perfil3.style.display = "none"
+  }
 
-function MostrarP2(){
-   document.getElementById("p2").style.display = "block";
-}
- 
-function OcultarP2(){
-   document.getElementById("p2").style.display = "none";
-}
+  svg4.onclick = () =>{
+    perfil4.style.display = "none"
+  }
 
-function MostrarP3(){
-   document.getElementById("p3").style.display = "block";
-}
-
-function OcultarP3(){
-  document.getElementById("p3").style.display = "none";
-  document.getElementById("imagen").style.display = "block"
-}
-  
-
-oculto.onclick = () =>{
-  window.close()
-}
-
-
-
+  svg5.onclick = () =>{
+    perfil5.style.display = "none"
+  }
