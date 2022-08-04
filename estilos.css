@@ -22,28 +22,30 @@ body{
     --naranja: #f5af19;
 }
 
-/*Menu de Navegación*/
+
+
 .menu{
-  position: fixed;
   width: 100%;
-  height: 70px;
+  position: fixed;
+  height: 60px;
   border-bottom: 2px solid var(--naranja);
   background-color: var(--letra);
   z-index: 1;
 }
-.menu .logo{
+.logo{
+  width: 100%;
   height: 100%;
-  margin-top: -27px;
-}
-.menu .logo h2{
-  height: 100%;
-  color: var(--naranja);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  font-size: 2.5rem;
-  font-family: 'Mouse memoirs';
+  justify-content: center;
 }
+.logo h2{
+  font-family: 'Mouse Memoirs';
+  font-size: 2.5rem;
+  color: var(--naranja);
+}
+
 /*MENU DE NAVEGACION PARA MOVIL*/
 
 #menu__toggle {
@@ -119,38 +121,57 @@ body{
   color: #333;
 } 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*CABECERA*/
 .cabecera{
   width: 100%;
-  height: 400px;
-  background: #fc4a1a;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  height: 600px;
+  background: #f12711;  
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711);  
+  background: linear-gradient(to right, #f5af19, #f12711); 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.cabecera-contenido{
+  padding: 10px;
+}
+.cabecera-contenido h1,
+.cabecera-contenido h2{
+  font-family: 'Dosis', sans-serif;
   text-align: center;
 }
-.cabecera h1{
-  margin-top: 88px;
+.cabecera-contenido span{
+  font-family: 'Mouse Memoirs', sans-serif;
 }
-.cabecera h1,
-.cabecera h2{
-  font-family: 'Dosis', sans-serif;
-  color: var(--letra);
-  padding-left: 10px;
-  padding-right: 10px;
+.cabecera-wave{
+  margin-top: -136px;
 }
-.cabecera span{
-  font-family: 'Mouse Memoirs';
+.wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+  z-index: 0;
 }
 ul{
   padding-left: 0!important;
-}
-.wrapper {
-  display: flex;
-  margin-top: 28px;
 }
 .wrapper .icon {
   position: relative;
@@ -221,19 +242,24 @@ ul{
   background: #E4405F;
   color: #ffffff;
 }
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+}
+
+
+
+
+
+
 
 
 /*CARTELERA*/
 .cartelera{
   width: 100%;
-  height: 700px;
-  padding: 20px;
-}
-.cartelera h2{
-  padding: 50px;
-  padding-bottom: 40px;
-  color: var(--white);
-  font-family: 'Dosis', sans-serif;
+  padding: 10px;
 }
 .cartelera1,
 .cartelera2,
@@ -253,9 +279,22 @@ ul{
   background-image: url('img/cartelera3.jpg');
   background-size: 109%;
 }
+.cartelera h2{
+  color: var(--white);
+  font-family: 'Dosis';
+  font-size: 1.8rem;
+  padding: 15px;
+}
 .carousel-control-next, 
 .carousel-control-prev{
   opacity: 1!important;
+  z-index: 0!important;
+}
+.carousel-control-next:focus, 
+.carousel-control-next:hover, 
+.carousel-control-prev:focus, 
+.carousel-control-prev:hover {
+  border: none;
 }
 .flip-card-container {
   --hue: 150;
@@ -268,6 +307,7 @@ ul{
   height: 500px;
   perspective: 1000px;
   margin: 0 auto;
+  z-index: 0;
 }
 .flip-card {
   width: inherit;
@@ -349,49 +389,44 @@ button:active {
 
 
 
+
+
+
+
+
 /*SOBRE NOSOTROS*/
 .about{
   width: 100%;
-  height: 500px;
-  background: #fc4a1a;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  height: 517px;
+  background: var(--naranja);  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 .about h2{
-  font-family: 'Mouse Memoirs', sans-serif;
-  margin-bottom: 20px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 2rem;
 }
 .about p{
-  font-family: 'Mouse Memoirs', sans-serif;
-  color: var(--letra);
   text-align: center;
-  font-weight: 600;
-  font-size: 1.3rem;
   padding: 10px;
- 
-}
-.about button:hover{
-  color: var(--white);
-  border: 1px solid var(--letra);
-  font-size: 1.1rem;
-
+  font-size: 1.2rem;
 }
 .about button{
-  color: var(--white);
-  border: 1px solid black;
+  border: 2px solid var(--letra);
   border-radius: 15px;
+  color: var(--white);
+  font-family: 'Dosis';
 }
+
+
 
 
 /*FOOTER*/
 .footer{
   width: 100%;
-  height: 100px;
+  height: 80px;
 }
 .legal{
   width: 100%;
@@ -404,17 +439,38 @@ button:active {
   justify-content: space-around;
   align-items: center;
 }
+.legal ul a{
+  color: var(--naranja);
+  font-family: 'Mouse Memoirs', sans-serif;
+  text-decoration: none;
+}
 .legal ul li{
   list-style-type: none;
 }
-.legal ul li a{
-  text-decoration: none;
-  color: var(--naranja);
-  font-family: 'Mouse Memoirs';
-}
+
+
+
+
+
+
+
+
 @media screen and (max-width:500px) {
   .flip-card-container{
-    width: 95%;
-    height: 408px;
+    width: 277px;
+  }
+  .cartelera1,
+  .cartelera2,
+  .cartelera3{
+    background-size: 114%;
+  }
+  .cartelera2{
+    background-size: 124%;
+  }
+  .cartelera3{
+    background-size: 124%;
+  }
+  .carousel-inner {
+    padding: 30px 0 28px 0px;
   }
 }
