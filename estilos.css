@@ -279,11 +279,39 @@ ul{
   background-image: url('img/cartelera3.jpg');
   background-size: 109%;
 }
+.cartelera4{
+  background-image: url('img/cartelera4.jpg');
+  background-size: 109%;
+}
+.cartelera5{
+  background-image: url('img/cartelera5.jpg');
+  background-size: 121%;
+}
+.cartelera6{
+  background-image: url('img/cartelera6.jpg');
+  background-size: 131%;
+  background-position: center;
+}
+.cartelera7{
+  background-image: url('img/cartelera7.jpg');
+  background-size: 109%;
+}
+.cartelera8{
+  background-image: url('img/cartelera8.jpg');
+  background-size: 109%;
+}
+.cartelera9{
+  background-image: url('img/cartelera9.jpg');
+  background-size: 109%;
+}
 .cartelera h2{
   color: var(--white);
   font-family: 'Dosis';
   font-size: 1.8rem;
-  padding: 15px;
+  padding: 27px 100px;
+}
+.pelis{
+  display: flex!important;
 }
 .carousel-control-next, 
 .carousel-control-prev{
@@ -404,20 +432,32 @@ button:active {
   justify-content: center;
   align-items: center;
 }
-.about h2{
+.about h2,
+.about-pc h2{
   font-family: 'Dosis', sans-serif;
   font-size: 2rem;
 }
-.about p{
+.about p,
+.about-pc p{
   text-align: center;
   padding: 10px;
   font-size: 1.2rem;
 }
-.about button{
+.about button,
+.about-pc button{
   border: 2px solid var(--letra);
   border-radius: 15px;
   color: var(--white);
   font-family: 'Dosis';
+}
+.about-pc{
+  width: 100%;
+  height: 517px;
+  background: var(--naranja);  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
 }
 
 
@@ -453,9 +493,76 @@ button:active {
 
 
 
+.swiper {
+  width: 240px;
+  height: 320px;
+  display: none!important;
+}
 
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-image: url('img/cartelera1.jpg');
+  background-size: 100%;
+}
+
+.swiper-slide:nth-child(2n) {
+  background-image: url('img/cartelera2.jpg');
+}
+
+.swiper-slide:nth-child(3n) {
+  background-image: url('img/cartelera3.jpg');
+}
+
+.swiper-slide:nth-child(4n) {
+  background-image: url('img/cartelera4.jpg');
+}
+
+.swiper-slide:nth-child(5n) {
+  background-image: url('img/cartelera5.jpg');
+}
+
+.swiper-slide:nth-child(6n) {
+  background-image: url('img/cartelera1.jpg');
+}
+
+.swiper-slide:nth-child(7n) {
+  background-image: url('img/cartelera7.jpg');
+}
+
+.swiper-slide:nth-child(8n) {
+  background-image: url('img/cartelera8.jpg');
+}
+
+.swiper-slide:nth-child(9n) {
+  background-image: url('img/cartelera9.jpg');
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
+}
 
 @media screen and (max-width:500px) {
+  .swiper{
+    display: flex!important;
+  }
+  .about{
+    display: none;
+  }
+  .pc{
+    display: none;
+  }
+  .about-pc{
+    display: flex;
+  }
   .flip-card-container{
     width: 277px;
   }
@@ -470,6 +577,7 @@ button:active {
   .cartelera3{
     background-size: 124%;
   }
+
   .carousel-inner {
     padding: 30px 0 28px 0px;
   }
